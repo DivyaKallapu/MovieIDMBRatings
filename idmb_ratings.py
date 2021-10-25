@@ -48,7 +48,6 @@ try:
 
         audio2 = r.listen(source)
         response = r.recognize_google(audio2)
-        print(response)
         if response.lower() == "no":
             text_to_audio("Sorry! I didn't get the movie name please type it out here")
             movie_name = input("Sorry! I didn't get the movie name please type it out here: ")
